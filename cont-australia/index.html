@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Australia</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid ms-3 me-3">
+            <a class="navbar-brand" href="#">
+                <img class="me-2" src="images/map.png" alt="icon" width="60">
+                <h1 style="display: inline; color: rgb(24, 19, 97);">Tourist Magazine</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tourist Magazine</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button> -->
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel/day.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/night.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/hole.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/kangaroo.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel/lotus.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="intro-card col-12 col-lg-8">
+                <h1
+                    style="text-align: center; font-size: calc(34px + (66 - 34) * ((100vw - 300px) / (1600 - 300))); font-family: 'Lobster', cursive; color:rgb(24, 19, 97) ;">
+                    Australia</h1>
+                <p class="fs-3 text-center" style="font-family: 'Lobster', cursive; font-weight: lighter;">
+                    ustralia is a land of dreams. 
+                    From the sacred legends of the Aboriginal Dreamtime, when the great spirits conjured the coral reefs, rainforests, and red deserts, 
+                    to armchair travelers who describe Australia as their dream destination, the Land Down Under deserves all the hype. 
+                    The world's smallest continent and largest island, Australia is almost the same size as the United States but with a population the size of New York State and 
+                    some of the quirkiest wildlife on the planet.
+                </p>
+            </div>
+            <div class="loc-map col-12 col-lg-4 text-center mt-5 mb-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60949550.79698232!2d95.47468769797501!3d-21.189562525113576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1638901804097!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="place col-12 col-lg-4">
+                <div class="card">
+                    <img src="images/card/mountain.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Mountains National Park, New South Wales</b></h5>
+                        <p class="card-text">A UNESCO World Heritage Site, beautiful Blue Mountains National Park is a 
+                            hiker's paradise and a popular day trip from Sydney. 
+                            It lies an easy 81-kilometer drive west of the city.</p>
+                        <a href="https://www.planetware.com/tourist-attractions/australia-aus.htm"
+                            class="btn btn-primary" target="blank">Take a Look</a>
+                    </div>
+                </div>
+            </div>
+            <div class="place col-12 col-lg-4">
+                <div class="card">
+                    <img src="images/card/sea.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Great Barrier Reef Marine Park, Queensland</b></h5>
+                        <p class="card-text">This World Heritage-listed natural wonder is one of the largest living structures on the planet. 
+                            It's so vast, you can see it from outer space. For divers, snorkelers, island aficionados, and nature lovers, 
+                            it's a bucket list destination.</p>
+                        <a href="https://www.planetware.com/tourist-attractions/australia-aus.htm" class="btn btn-primary" target="blank">Take a Look</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="place col-12 col-lg-4">
+                <div class="card">
+                    <img src="images/card/sydney.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sydney</b></h5>
+                        <p class="card-text">Mention "Sydney, Australia" and most people think of the Opera House. 
+                            Shaped like huge shells or billowing sails, this famous building on Sydney's Bennelong Point 
+                            graces the list of UNESCO World Heritage Sites and is one of the world's great architectural icons.</p>
+                        <a href="https://www.planetware.com/tourist-attractions/australia-aus.htm"
+                            class="btn btn-primary" target="blank">Take a Look</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+
+</html>
