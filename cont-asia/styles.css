@@ -14,7 +14,13 @@
   font-family: "Lobster", cursive;
 }
 .carousel-item {
-  max-height: 600px;
+  max-height: 93vh;
+}
+.carousel-caption {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: left;
 }
 .intro-card {
   /* border: 2px solid red; */
