@@ -37,6 +37,11 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top
+                                offcanvas</button>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
@@ -65,28 +70,47 @@
             </div>
         </div>
     </nav>
- 
-
-    <video width="100%" height="50%" autoplay loop>
-        <source src="videos/beach.mp4" type="video/mp4">
-    </video>
-    <div class="navlinks">
-        <ul class="nav nav-pills justify-content-center">
-            <li class="nav-item"><a class="nav-link active" href="cont-africa/index.html" target="blank">Africa</a></li>
-            <li class="nav-item"><a class="nav-link" href="cont-antartica/index.html" target="blank">Antartica</a></li>
-            <li class="nav-item"><a class="nav-link" href="cont-asia/index.html" target="blank">Asia</a></li>
-            <li class="nav-item"><a class="nav-link" href="cont-australia/index.html" target="blank">Australia</a></li>
-            <li class="nav-item"><a class="nav-link" href="cont-europe/index.html" target="blank">Europe</a></li>
-            <li class="nav-item"><a class="nav-link" href="cont-north-america/index.html" target="blank">NA</a></li>
-            <li class="nav-item"><a class="nav-link" href="cont-south-america/index.html" target="blank">SA</a></li>
-        </ul>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navlinks">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item"><a class="nav-link active" href="cont-africa/index.html"
+                            target="blank">Africa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cont-antartica/index.html"
+                            target="blank">Antartica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cont-asia/index.html" target="blank">Asia</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cont-australia/index.html"
+                            target="blank">Australia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cont-europe/index.html" target="blank">Europe</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cont-north-america/index.html" target="blank">NA</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cont-south-america/index.html" target="blank">SA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <!-- <img class="w-100" src="cont-asia/images/carousel/fuji.jpg" alt=""> -->
+
+
+    <!-- <video width="100%" height="50%" autoplay loop>
+        <source src="../beach.mp4" type="video/mp4">
+    </video> -->
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
