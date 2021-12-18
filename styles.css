@@ -15,10 +15,13 @@
 }
 
 .offcanvas-top {
-  height: 70vh;
+  height: 90vh;
   top: 70px;
   margin: 5px 25px 0 25px;
   border-radius: 5px;
+}
+.card-title {
+  font-family: "Lobster", cursive;
 }
 
 
@@ -38,4 +41,11 @@
   border-radius: 2px;
   background-color: rgb(235, 235, 235);
   color: black !important;
+}
+
+.card:hover {
+  cursor:pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition-duration: 500ms;
+  transform: scale(1.01);
 }
