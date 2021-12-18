@@ -4,14 +4,10 @@
 }
 
 .navbar-brand {
+  margin: 5px;
   display: flex;
   align-items: flex-end;
   font-family: "Lobster", cursive;
-}
-
-.navlinks {
-  padding: 5px 0 5px 0;
-  border-top: 1px solid rgb(195, 195, 195);
 }
 
 .accordion-body {
@@ -19,7 +15,27 @@
 }
 
 .offcanvas-top {
+  height: 70vh;
   top: 70px;
   margin: 5px 25px 0 25px;
   border-radius: 5px;
+}
+
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item:hover {
+  background-color: rgb(24, 19, 97);
+}
+
+.nav-item:hover > a {
+  color: white !important;
+}
+
+.active {
+  border-radius: 2px;
+  background-color: rgb(235, 235, 235);
+  color: black !important;
 }

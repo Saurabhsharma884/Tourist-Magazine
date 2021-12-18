@@ -20,8 +20,8 @@
     <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top">
         <div class="container-fluid ms-3 me-3">
             <a class="navbar-brand" href="#">
-                <img class="me-2" src="map.png" alt="icon" width="60">
-                <h1 style="display: inline; color: rgb(24, 19, 97);">Tourist Magazine</h1>
+                <img class="me-2" src="map.png" alt="icon" width="40">
+                <h3 style="display: inline; color: rgb(24, 19, 97); margin-bottom: 0px;">Tourist Magazine</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
@@ -29,39 +29,45 @@
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tourist Magazine</h5>
+                <div class="offcanvas-header" style="  background: rgb(235, 235, 235);">
+                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel"
+                        style="display: inline; color: rgb(24, 19, 97);font-family: 'Lobster', cursive;">Tourist
+                        Magazine</h3>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top
-                                offcanvas</button>
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item  ms-2 me-2 rounded">
+                            <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item d-none d-lg-block  ms-2 me-4 rounded">
+                            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">Continents</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav d-lg-none mb-5">
+                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-africa/index.html"
+                                target="blank">Africa</a>
+                        </li>
+                        <li class="nav-item rounded"><a class="nav-link  fw-bold" href="cont-antartica/index.html"
+                                target="blank">Antartica</a></li>
+                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-asia/index.html"
+                                target="blank">Asia</a>
+                        </li>
+                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-australia/index.html"
+                                target="blank">Australia</a></li>
+                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-europe/index.html"
+                                target="blank">Europe</a>
+                        </li>
+                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-north-america/index.html"
+                                target="blank">NA</a>
+                        </li>
+                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-south-america/index.html"
+                                target="blank">SA</a>
+                        </li>
+                    </ul>
+
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -72,36 +78,38 @@
     </nav>
     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+            <h2 id="offcanvasTopLabel">Lets Go to..</h2>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div class="navlinks">
-                <ul class="nav nav-pills justify-content-center">
-                    <li class="nav-item"><a class="nav-link active" href="cont-africa/index.html"
-                            target="blank">Africa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cont-antartica/index.html"
-                            target="blank">Antartica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cont-asia/index.html" target="blank">Asia</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="cont-australia/index.html"
-                            target="blank">Australia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cont-europe/index.html" target="blank">Europe</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="cont-north-america/index.html" target="blank">NA</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="cont-south-america/index.html" target="blank">SA</a>
-                    </li>
-                </ul>
+        <div class="offcanvas-body m-5">
+            <div class="row">
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
             </div>
+
+
         </div>
     </div>
-    <!-- <img class="w-100" src="cont-asia/images/carousel/fuji.jpg" alt=""> -->
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe
+            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0"
+            type="text/html"
+            src="https://www.dailymotion.com/embed/video/k1saEvVxLLplp8xsTuj?autoplay=1&controls=0&mute=1&loop=1"
+            width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe> </div>
 
-
-    <!-- <video width="100%" height="50%" autoplay loop>
-        <source src="../beach.mp4" type="video/mp4">
-    </video> -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
