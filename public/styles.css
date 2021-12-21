@@ -19,6 +19,7 @@
   pointer-events: none;
   width: 98vw;
   height: 90vh;
+  overflow: hidden;
 }
 
 .video-container iframe {
