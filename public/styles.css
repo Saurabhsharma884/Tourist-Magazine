@@ -1,0 +1,111 @@
+.navbar {
+  z-index: 1046;
+  padding: 0;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 5px;
+  display: flex;
+  align-items: flex-end;
+  font-family: "Lobster", cursive;
+}
+
+.video-container {
+  pointer-events: none;
+  width: 98vw;
+  height: 90vh;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 99vw;
+  height: 90vh;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  padding: 0px 10px 0px 10px;
+  border: 2px solid red;
+  height: 95vh;
+}
+#intro {
+
+}
+
+#text {
+  position: absolute;
+  color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#text h1 {
+  font-size: calc(1.525rem + 3.3vw);
+}
+
+.accordion-body {
+  background: #fff;
+}
+
+.offcanvas-top {
+  height: 90vh;
+  top: 70px;
+  margin: 5px 25px 0 25px;
+  border-radius: 5px;
+}
+.card-title {
+  font-family: "Lobster", cursive;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item:hover {
+  background-color: rgb(24, 19, 97);
+}
+
+.nav-item:hover > a {
+  color: white !important;
+}
+
+.active {
+  border-radius: 2px;
+  background-color: rgb(235, 235, 235);
+  color: black !important;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition-duration: 500ms;
+  transform: scale(1.01);
+}
+
+#intro {
+  background-image: url('images/planes.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    width: 177.78vh;
+  }
+}
