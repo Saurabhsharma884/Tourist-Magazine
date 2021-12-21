@@ -17,8 +17,8 @@
 
 .video-container {
   pointer-events: none;
-  width: 98vw;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -26,8 +26,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 99vw;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
 }
 
