@@ -1,6 +1,7 @@
 .navbar {
   z-index: 1046;
   padding: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .container-fluid {
   margin: 0;
@@ -30,14 +31,16 @@
 }
 
 section {
-  padding: 0px 10px 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 10px 20px 10px;
   border: 2px solid red;
   height: 95vh;
 }
-#intro {
 
+.row {
+  height: 100%;
 }
-
 #text {
   position: absolute;
   color: #ffffff;
@@ -50,16 +53,6 @@ section {
   font-size: calc(1.525rem + 3.3vw);
 }
 
-.accordion-body {
-  background: #fff;
-}
-
-.offcanvas-top {
-  height: 90vh;
-  top: 70px;
-  margin: 5px 25px 0 25px;
-  border-radius: 5px;
-}
 .card-title {
   font-family: "Lobster", cursive;
 }
@@ -81,23 +74,43 @@ section {
   background-color: rgb(235, 235, 235);
   color: black !important;
 }
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 500ms;
+}
 
 .card:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transition-duration: 500ms;
+
   transform: scale(1.01);
 }
 
 #intro {
-  background-image: url('images/planes.png');
+  background-image: url("images/planes.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+.intro-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
+.intro-text h1 {
+  font-family: "Lobster", cursive;
+  font-weight: bolder;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(16, 131, 216) 50%,
+    rgb(255, 147, 52) 50%,
+    rgb(255, 147, 52) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media (min-aspect-ratio: 16/9) {
   .video-container iframe {

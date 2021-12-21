@@ -41,9 +41,11 @@
                         <li class="nav-item  ms-2 me-2 rounded">
                             <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
                         </li>
+                        <li class="nav-item d-none d-lg-block  ms-2 me-2 rounded">
+                            <a href="#continents" class="nav-link">Lets Go</a>
+                        </li>
                         <li class="nav-item d-none d-lg-block  ms-2 me-4 rounded">
-                            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                                aria-controls="offcanvasTop">Continents</a>
+                            <a href="#form" class="nav-link">Help</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav d-lg-none mb-5">
@@ -76,14 +78,44 @@
             </div>
         </div>
     </nav>
-    <div class="offcanvas offcanvas-top d-none d-lg-block" tabindex="-1" id="offcanvasTop"
-        aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header ms-5 mt-2 me-5">
-            <h2 id="offcanvasTopLabel" style=" font-family: 'Lobster', cursive;">Lets Go to..</h2>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body ms-5 me-5">
-            <div class="cards">
+    <div class="container-fluid">
+        <section id="home">
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/mJyZCBtStMo?playlist=mJyZCBtStMo&controls=0&autoplay=1&mute=1&loop=1"></iframe>
+            </div>
+            <div id="text">
+                <h1 class="fw-bolder" style="font-family:'Lobster', cursive ;">“The most beautiful
+                    thing in the world is, of course, the world itself”</h1>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="row"">
+                <div class=" intro-text col-12 col-lg-9 pt-5">
+                <h1> “Once a year go somewhere you have never been before.”<br> — Dalai Lama <br>
+                    <br> We know where you’re going… <br>
+
+                    We bet you’ll love it. <br>
+
+                    We love to fly and it shows. <br>
+
+                    We treat you like Royalty! <br>
+
+                    We’ll get you there. <br>
+
+                    We’ll show you the world. <br>
+
+                    We’ll take more care of you. <br>
+                </h1>
+            </div>
+            <div style="display: flex; align-items: flex-end; justify-content: center;" class="col-12 col-lg-3">
+                <img width="300" height="400" src="images/people.png" alt="">
+            </div>
+        </section>
+        <section id="continents">
+            <h1 style=" font-family: 'Lobster', cursive; color: rgb(24, 19, 97);" class="mx-5 ms-5">Choose your
+                destination</h1>
+            <div class="cards mt-5">
                 <div class="row mb-3 justify-content-center"">
                     <div class=" col-2">
                     <div class="card border-0" style="width: 14rem;">
@@ -145,31 +177,10 @@
                 </div>
 
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="container-fluid">
-        <section id="home">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/mJyZCBtStMo?playlist=mJyZCBtStMo&controls=0&autoplay=1&mute=1&loop=1"></iframe>
-            </div>
-            <div id="text">
-                <h1 class="fw-bolder" style="font-family:'Lobster', cursive ;">“The most beautiful
-                    thing in the world is, of course, the world itself”</h1>
-            </div>
-        </section>
-        <section id="intro">
-            <div class="row" style="height:inherit;">
-                <div class="col col-lg-8">
-
-                </div>
-                <div style="display: flex; align-items: flex-end; justify-content: flex-end;" class="col col-lg-4">
-                    <img width="350" height="400" src="images/people.png" alt="">
-                </div>
-            </div>
 
         </section>
         <section id="form">
+            <h1 style=" font-family: 'Lobster', cursive; color: rgb(24, 19, 97);" class="mx-5 ms-5">Can't Decide where to go? Let Us help you..</h1>
 
         </section>
 
