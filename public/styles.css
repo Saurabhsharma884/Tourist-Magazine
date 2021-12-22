@@ -24,13 +24,14 @@ section {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 55px 10px 20px 10px;
+  padding: 55px 20px 20px 10px;
   /* border: 2px solid red; */
   height: 95vh;
 }
 
 .row {
   height: 100%;
+  /* --bs-gutter-x:0; */
 }
 
 .video-container {
