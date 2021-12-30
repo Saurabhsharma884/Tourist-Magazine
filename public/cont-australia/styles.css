@@ -1,40 +1,46 @@
 navbar {
-    padding: 0;
-    box-shadow: 0px 2.6px 4.3px rgba(0, 0, 0, 0.022),
-      0px 6.5px 9.9px rgba(0, 0, 0, 0.029), 0px 13.3px 18.5px rgba(0, 0, 0, 0.036),
-      0px 27.4px 35.1px rgba(0, 0, 0, 0.046), 0px 75px 90px rgba(0, 0, 0, 0.08);
-  }
-  .container-fluid {
-    padding: 0px;
-  }
-  
-  .navbar-brand {
-    display: flex;
-    align-items: flex-end;
-    font-family: "Lobster", cursive;
-  }
-  .carousel-item {
-    max-height: 600px;
-  }
-  .intro-card {
-    /* border: 2px solid red; */
-  }
-  
-  .card {
-    /* height: 600px; */
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  }
-  .place:hover {
-    transition-duration: 300ms;
-    transform: scale(1.01);
-  }
-  .card-text {
-    height: 150px;
-    overflow: hidden;
-  }
-  
-  #tourist_places {
-    height: 50vh;
-  }
+  padding: 0;
+  box-shadow: 0px 2.6px 4.3px rgba(0, 0, 0, 0.022),
+    0px 6.5px 9.9px rgba(0, 0, 0, 0.029), 0px 13.3px 18.5px rgba(0, 0, 0, 0.036),
+    0px 27.4px 35.1px rgba(0, 0, 0, 0.046), 0px 75px 90px rgba(0, 0, 0, 0.08);
+}
+.container-fluid {
+  padding: 0px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Lobster", cursive;
+}
+.carousel-item {
+  max-height: 93vh;
+}
+.intro-card {
+  /* border: 2px solid red; */
+}
+.carousel-caption {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: left;
+}
+
+.card {
+  height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.place:hover {
+  transition-duration: 300ms;
+  transform: scale(1.01);
+}
+.card-text {
+  height: 150px;
+  overflow: hidden;
+}
+
+#tourist_places {
+  height: 50vh;
+}
