@@ -37,7 +37,8 @@
   transform: scale(1.01);
 }
 .card-text {
-  height: 180px;
+  height: 150px;
+  overflow: hidden;
 }
 
 #tourist_places {
