@@ -1,289 +1,537 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OC/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OC/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Tourist Magazine</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top">
-        <div class="container-fluid ms-3 me-3">
-            <a class="navbar-brand" href="#">
-                <img class="me-2" src="images/map.png" alt="icon" width="40">
-                <h3 style="display: inline; color: rgb(24, 19, 97); margin-bottom: 0px;">Tourist Magazine</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header" style="  background: rgb(235, 235, 235);">
-                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel"
-                        style="display: inline; color: rgb(24, 19, 97);font-family: 'Lobster', cursive;">Tourist
-                        Magazine</h3>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1">
-                        <li class="nav-item  ms-2 me-2 rounded">
-                            <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item d-none d-lg-block  ms-2 me-2 rounded">
-                            <a href="#continents" class="nav-link">Lets Go</a>
-                        </li>
-                        <li class="nav-item d-none d-lg-block  ms-2 me-4 rounded">
-                            <a href="#help-form" class="nav-link">Help</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-lg-none mb-5">
-                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-africa/index.html"
-                                target="blank">Africa</a>
-                        </li>
-                        <li class="nav-item rounded"><a class="nav-link  fw-bold" href="cont-antartica/index.html"
-                                target="blank">Antartica</a></li>
-                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-asia/index.html"
-                                target="blank">Asia</a>
-                        </li>
-                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-australia/index.html"
-                                target="blank">Australia</a></li>
-                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-europe/index.html"
-                                target="blank">Europe</a>
-                        </li>
-                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-north-america/index.html"
-                                target="blank">NA</a>
-                        </li>
-                        <li class="nav-item rounded"><a class="nav-link fw-bold" href="cont-south-america/index.html"
-                                target="blank">SA</a>
-                        </li>
-                    </ul>
+      <div class="container-fluid ms-3 me-3">
+        <a class="navbar-brand" href="#">
+          <img class="me-2" src="images/map.png" alt="icon" width="40" />
+          <h3
+            style="display: inline; color: rgb(24, 19, 97); margin-bottom: 0px"
+          >
+            Tourist Magazine
+          </h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header" style="background: rgb(235, 235, 235)">
+            <h3
+              class="offcanvas-title"
+              id="offcanvasNavbarLabel"
+              style="
+                display: inline;
+                color: rgb(24, 19, 97);
+                font-family: 'Lobster', cursive;
+              "
+            >
+              Tourist Magazine
+            </h3>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item ms-2 me-2 rounded">
+                <a class="nav-link active fw-bold" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item d-none d-lg-block ms-2 me-2 rounded">
+                <a href="#continents" class="nav-link">Lets Go</a>
+              </li>
+              <li class="nav-item d-none d-lg-block ms-2 me-4 rounded">
+                <a href="#help-form" class="nav-link">Help</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-lg-none mb-5">
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-africa/index.html"
+                  target="blank"
+                  >Africa</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-antartica/index.html"
+                  target="blank"
+                  >Antartica</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-asia/index.html"
+                  target="blank"
+                  >Asia</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-australia/index.html"
+                  target="blank"
+                  >Australia</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-europe/index.html"
+                  target="blank"
+                  >Europe</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-north-america/index.html"
+                  target="blank"
+                  >NA</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link fw-bold"
+                  href="cont-south-america/index.html"
+                  target="blank"
+                  >SA</a
+                >
+              </li>
+            </ul>
 
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </nav>
     <div class="container-fluid">
-        <section style="padding: 0; margin-top: -10px; height: auto;" id="home">
-            <div class="video-container">
-                <h1 id="d-arrow"><i class="bi bi-arrow-down-circle"></i></h1>
-                <iframe
-                    src="https://www.dailymotion.com/embed/video/k4iZavVNSNDFHbxtfRi?rel=0&controls=0&autoplay=1&mute=1&loop=1"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+      <section style="padding: 0; margin-top: -10px; height: auto" id="home">
+        <div class="video-container">
+          <h1 id="d-arrow"><i class="bi bi-arrow-down-circle"></i></h1>
+          <iframe
+            src="https://www.dailymotion.com/embed/video/k4iZavVNSNDFHbxtfRi?rel=0&controls=0&autoplay=1&mute=1&loop=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="text">
+          <h1 class="fw-bolder" style="font-family: 'Lobster', cursive">
+            “The most beautiful thing in the world is, of course, the world
+            itself”
+          </h1>
+        </div>
+      </section>
+      <section id="intro">
+        <div class="row">
+          <div class="intro-text col-12 col-lg-9 pt-5">
+            <h1>
+              “Once a year go somewhere you have never been before.”<br />
+              — Dalai Lama <br />
+              <br />
+              We know where you're going… <br />
+
+              We bet you'll love it. <br />
+
+              We love to fly and it shows. <br />
+
+              We treat you like Royalty! <br />
+
+              We'll get you there. <br />
+
+              We'll show you the world. <br />
+
+              We'll take more care of you. <br />
+            </h1>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+            "
+            class="col-12 d-none d-lg-flex col-lg-3"
+          >
+            <img class="img-fluid" src="images/people.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="d-none d-lg-block" id="continents">
+        <h1
+          style="font-family: 'Lobster', cursive; color: rgb(24, 19, 97)"
+          class="mx-5 ms-5"
+        >
+          Choose your destination
+        </h1>
+        <div class="cards mt-5">
+          <div class="row mb-3">
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a href="cont-asia/index.html" target="blank">
+                  <img
+                    height="200"
+                    src="images/asia-map.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">ASIA</h3>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div id="text">
-                <h1 class="fw-bolder" style="font-family:'Lobster', cursive ;">“The most beautiful
-                    thing in the world is, of course, the world itself”</h1>
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a href="cont-europe/index.html" target="blank">
+                  <img
+                    height="200"
+                    src="images/europe.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">EUROPE</h3>
+                  </div>
+                </a>
+              </div>
             </div>
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a href="cont-australia/index.html" target="blank">
+                  <img
+                    height="200"
+                    src="images/australia.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">AUSTRALIA</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a href="cont-africa/index.html" target="blank">
+                  <img
+                    height="200"
+                    src="images/southern-africa-map.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">AFRICA</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-5 justify-content-center">
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a href="cont-north-america/index.html" target="blank">
+                  <img
+                    height="200"
+                    src="images/map-na.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">NORTH AMERICA</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a
+                  href="cont-antartica/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    height="200"
+                    src="images/splited-Antarctica.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">ANTARTICA</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card l mx-auto border-0" style="width: 14rem">
+                <a
+                  href="cont-south-america/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    height="200"
+                    src="images/map-South_America.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">SOUTH AMERICA</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="" id="">
+        <div class="card">
+          <div class="card-body">
+            <h1
+              style="font-family: 'Lobster', cursive; color: rgb(24, 19, 97)"
+              class="mx-5 mb-5"
+            >
+              Handpicked Locations For you
+            </h1>
+            <div class="owl-carousel mt-4">
+              <div class="card rounded">
+                <div
+                  class="card-body p-0 rounded"
+                  style="
+                    height: 300px;
+                    background-image: url(images/pexels-jaime-reimer-2662116.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <span class="pickup-title">Lake View</span>
+                </div>
+              </div>
+              <div class="card rounded">
+                <div
+                  class="card-body p-0 rounded"
+                  style="
+                    height: 300px;
+                    background-image: url(images/pexels-jaime-reimer-2662116.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <span class="pickup-title">Lake View</span>
+                </div>
+              </div>
+              <div class="card rounded">
+                <div
+                  class="card-body p-0 rounded"
+                  style="
+                    height: 300px;
+                    background-image: url(images/pexels-jaime-reimer-2662116.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <span class="pickup-title">Lake View</span>
+                </div>
+              </div>
+              <div class="card rounded">
+                <div
+                  class="card-body p-0 rounded"
+                  style="
+                    height: 300px;
+                    background-image: url(images/pexels-jaime-reimer-2662116.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <span class="pickup-title">Lake View</span>
+                </div>
+              </div>
             
-        </section>
-        <section id="intro">
-            <div class="row">
-                <div class=" intro-text col-12 col-lg-9 pt-5">
-                    <h1> “Once a year go somewhere you have never been before.”<br> — Dalai Lama <br>
-                        <br> We know where you're going… <br>
-
-                        We bet you'll love it. <br>
-
-                        We love to fly and it shows. <br>
-
-                        We treat you like Royalty! <br>
-
-                        We'll get you there. <br>
-
-                        We'll show you the world. <br>
-
-                        We'll take more care of you. <br>
-                    </h1>
-                </div>
-                <div style="display: flex; align-items: flex-end; justify-content: center;"
-                    class="col-12 d-none d-lg-flex col-lg-3">
-                    <img class="img-fluid" src="images/people.png" alt="">
-                </div>
+              <div class="card"><h4>5</h4></div>
+              <div class="card"><h4>6</h4></div>
+              <div class="card"><h4>7</h4></div>
+              <div class="card"><h4>8</h4></div>
+              <div class="card"><h4>9</h4></div>
+              <div class="card"><h4>10</h4></div>
+              <div class="card"><h4>11</h4></div>
+              <div class="card"><h4>12</h4></div>
             </div>
-        </section>
-        <section class="d-none d-lg-block" id="continents">
-            <h1 style=" font-family: 'Lobster', cursive; color: rgb(24, 19, 97);" class="mx-5 ms-5">Choose your
-                destination</h1>
-            <div class="cards mt-5">
-                <div class="row mb-3">
-                    <div class="col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-asia/index.html" target="blank">
-                                <img height="200" src="images/asia-map.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">ASIA</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-europe/index.html" target="blank">
-                                <img height="200" src="images/europe.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">EUROPE</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-australia/index.html" target="blank">
-                                <img height="200" src="images/australia.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">AUSTRALIA</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class=" col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-africa/index.html" target="blank">
-                                <img height="200" src="images/southern-africa-map.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">AFRICA</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section id="help-form">
+        <h1
+          style="font-family: 'Lobster', cursive; color: rgb(24, 19, 97)"
+          class="mx-5 ms-5"
+        >
+          Can't Decide where to go? Let Us help you..
+        </h1>
+        <div class="row justify-content-center">
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+            class="col-3 col-lg-6 col-xl-4 p-5 d-none d-xl-flex"
+          >
+            <img width="350" src="images/bus.png" alt="" />
+          </div>
+          <div class="col-12 col-xl-8">
+            <div class="form-box mx-auto p-5 mt-5 rounded">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label"
+                    >Last name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" />
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="1234 Main St"
+                  />
                 </div>
 
-                <div class=" row my-5 justify-content-center">
-                    <div class="col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-north-america/index.html" target="blank">
-                                <img height="200" src="images/map-na.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">NORTH AMERICA</h3>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-antartica/index.html" target="_blank" rel="noopener noreferrer">
-                                <img height="200" src="images/splited-Antarctica.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">ANTARTICA</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card mx-auto border-0" style="width: 14rem;">
-                            <a href="cont-south-america/index.html" target="_blank" rel="noopener noreferrer">
-                                <img height="200" src="images/map-South_America.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title text-center">SOUTH AMERICA</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
                 </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">SUBMIT</button>
+                </div>
+              </form>
             </div>
-        </section>
-        <section id="help-form">
-            <h1 style=" font-family: 'Lobster', cursive; color: rgb(24, 19, 97);" class="mx-5 ms-5">Can't Decide where
-                to go? Let Us help you..</h1>
-            <div class="row justify-content-center">
-                <div style="display: flex; align-items: center; justify-content: center;"
-                    class="col-3 col-lg-6 col-xl-4 p-5 d-none d-xl-flex">
-                    <img width="350" src="images/bus.png" alt="">
-                </div>
-                <div class="col-12  col-xl-8">
-                    <div class="form-box mx-auto p-5 mt-5 rounded">
-                        <form class="row g-3">
-                            <div class="col-md-6">
-                                <label for="validationCustom01" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="validationCustom01" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="validationCustom02" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="validationCustom02" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4">
-                            </div>
-                            <div class="col-12">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputState" class="form-label">State</label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="inputZip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="3"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">SUBMIT</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
-    <footer>
-        
-
-    </footer>
-
-
+    <footer></footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="OC/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 4,
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+        });
+        $(".play").on("click", function () {
+          owl.trigger("play.owl.autoplay", [2000]);
+        });
+        $(".stop").on("click", function () {
+          owl.trigger("stop.owl.autoplay");
+        });
+      });
+    </script>
+  </body>
 </html>
