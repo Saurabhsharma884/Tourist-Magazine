@@ -7,7 +7,9 @@
   margin: 0;
   padding: 0;
 }
-
+.checked {
+  color: orange;
+}
 .navbar-brand {
   margin: 5px;
   display: flex;
