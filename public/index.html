@@ -242,7 +242,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span></h2>
+              <span class="fa fa-star"></span>
+            </h2>
           </div>
         </div>
         <div class="card rounded text-center">
@@ -256,7 +257,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span></h2>
+              <span class="fa fa-star"></span>
+            </h2>
           </div>
         </div>
         <div class="card rounded text-center">
@@ -270,7 +272,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span></h2>
+              <span class="fa fa-star"></span>
+            </h2>
           </div>
         </div>
         <div class="card rounded text-center">
@@ -284,7 +287,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span></h2>
+              <span class="fa fa-star"></span>
+            </h2>
           </div>
         </div>
 
@@ -299,7 +303,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span></h2>
+              <span class="fa fa-star"></span>
+            </h2>
           </div>
         </div>
         <div class="card rounded text-center">
@@ -308,30 +313,42 @@
           </div>
           <!-- <img src="images/wonders.jpg" class="card-img-top" alt="..."> -->
           <div class="card-body">
-            <h1 class="card-title">Temples 
+            <h1 class="card-title">Temples
             </h1>
             <h2><span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span></h2>
+              <span class="fa fa-star"></span>
+            </h2>
           </div>
         </div>
-        <div class="card">
-          <h4>7</h4>
-        </div>
-        <div class="card">
-          <h4>8</h4>
+        <div class="card rounded text-center">
+          <div
+            style="background-image:url('images/relax.jpg'); height: 600px; background-position: center; background-size: cover;">
+          </div>
+          <!-- <img src="images/wonders.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h1 class="card-title">Relaxation Destinations
+            </h1>
+            <h2><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </h2>
+          </div>
         </div>
       </div>
       <!-- </div>
         </div> -->
     </section>
-    <section id="nearby">
+    <section class="mb-4" id="nearby">
       <h1 style="font-family: 'Lobster', cursive; color: rgb(24, 19, 97); font-size: 56px;" class="mx-5 mb-5">
         Nearby Places...
       </h1>
-
+      <div class="row" id="places" style="overflow: scroll;">
+      </div>
     </section>
     <section id="help-form">
       <h1 style="font-family: 'Lobster', cursive; color: rgb(24, 19, 97); font-size: 56px;" class="mx-5 ms-5">
@@ -388,6 +405,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="main.js"></script>
   <script>
     $(document).ready(function () {
       $(".owl-carousel").owlCarousel({
